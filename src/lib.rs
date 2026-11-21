@@ -20,6 +20,8 @@
 //! assert_eq!(values.borrowed().len(), 3);
 //! ```
 
+#![no_std]
+
 /// Postfix borrowing.
 ///
 /// This trait provides [`borrowed`] and [`borrowed_mut`] methods, which take `&self`
