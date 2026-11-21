@@ -39,8 +39,13 @@ Firstly, import the trait:
 use borrowed::Borrowed;
 ```
 
-Then `value.borrowed()` and `value.borrowed_mut()` are equivalent
-to `&value` and `&mut value` respectively.
+This trait provides `borrowed` and `borrowed_mut` methods, which take `&self`
+and `&mut self` as their receivers respectively, and simply return `self`.
+
+These methods can be used in method chains and other postfix positions.
+
+Note that due to method resolution, calling `borrowed` on `&T` returns `&T` rather
+than `&&T`, and the same applies to `borrowed_mut` on `&mut T`.
 
 ## Naming
 
