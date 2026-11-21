@@ -1,0 +1,13 @@
+[package]
+name = "borrowed"
+version = "0.1.0"
+authors = ["nekitdev <nekit@nekit.dev>"]
+rust-version = "1.100"
+edition = "2024"
+description = "Postfix borrowing."
+readme = "README.md"
+documentation = "https://docs.rs/borrowed"
+repository = "https://github.com/nekitdev/borrowed"
+license = "MIT"
+categories = ["rust-patterns", "no-std", "no-std::no-alloc"]
+keywords = ["borrow", "postfix"]
